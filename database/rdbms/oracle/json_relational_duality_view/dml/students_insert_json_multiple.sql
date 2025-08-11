@@ -1,3 +1,7 @@
+/*
+    This query will cause an error,
+    but the purpose is to check the returned error.
+*/
 INSERT INTO dv_students VALUES (
     '[
         {
