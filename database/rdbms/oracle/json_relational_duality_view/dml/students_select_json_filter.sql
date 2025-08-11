@@ -3,7 +3,7 @@ SELECT
         'ex_first_name': JSON_VALUE(data, '$.first_name'),
         'ex_last_name': JSON_VALUE(data, '$.last_name'),
         'ex_gpq': JSON_VALUE(data, '$.gpa')
-    }
+    } AS data
 FROM
     dv_students
 WHERE
