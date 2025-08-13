@@ -1,3 +1,6 @@
+SET HEADING ON;
+SET LINESIZE 1000;
+SET PAGESIZE 10;
 SELECT
     JSON {
         'ex_first_name': JSON_VALUE(data, '$.first_name'),
