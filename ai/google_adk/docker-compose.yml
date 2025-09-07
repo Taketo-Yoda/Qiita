@@ -1,0 +1,10 @@
+services:
+  searxng:
+    image: searxng/searxng:latest
+    container_name: searxng
+    volumes:
+      - ./searxng:/etc/searxng
+    ports:
+      - "8080:8080"
+    environment:
+      - "SEARXNG_BASE_URL=http://localhost:8080/"
